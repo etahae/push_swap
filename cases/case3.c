@@ -6,7 +6,7 @@
 /*   By: tnamir <tnamir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:53:22 by tnamir            #+#    #+#             */
-/*   Updated: 2022/02/23 18:42:34 by tnamir           ###   ########.fr       */
+/*   Updated: 2022/02/25 11:36:25 by tnamir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,4 @@ void	case3(t_list *list)
 			sa(list, "sa\n");
 		}
 	}
-	//   for(int i = 0; i < list->a_lenght; i++)
-	//     	printf("%d ", list->a[i]);
-	//     printf("\n");
-	//    for(int i = 0; i < list->b_lenght; i++)
-	//    	printf("%d ", list->b[i]);
 }

@@ -42,13 +42,11 @@ static void	to_be_main(t_list *list, char **final_nums, char *nums)
 int	main(int argc, char **argv)
 {
 	int		x;
-	int		y;
 	char	*nums;
 	char	**final_nums;
 	t_list	list;
 
 	x = 1;
-	y = 0;
 	if (argc > 1)
 	{
 		final_nums = NULL;
@@ -65,5 +63,6 @@ int	main(int argc, char **argv)
 	x = 0;
 	is_sorted(&list);
 	all_cases(&list);
+	free(list.b);
 	return (0);
 }

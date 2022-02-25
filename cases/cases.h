@@ -6,7 +6,7 @@
 /*   By: tnamir <tnamir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 19:30:41 by tnamir            #+#    #+#             */
-/*   Updated: 2022/02/24 18:11:44 by tnamir           ###   ########.fr       */
+/*   Updated: 2022/02/25 11:35:34 by tnamir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@
 void	all_cases(t_list *list);
 void	case3(t_list *list);
 void	case5(t_list *list);
-void	case100(t_list *list);
-void	case500(t_list *list);
+void	big_case(t_list *list);
 int		indexof(int *lista, int i);
 int		*sorted_pointer(int *list, int lenght);
 

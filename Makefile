@@ -14,7 +14,7 @@ COMMANDS = ./commands/sa.c ./commands/sb.c ./commands/pa.c ./commands/pb.c ./com
 
 TOOLS = ./tools/ft_atoi.c ./tools/errors_checker.c ./tools/ft_split.c ./tools/ft_substr.c ./tools/ft_strlen.c ./tools/ft_strjoin.c ./tools/ft_strdup.c ./tools/sorted_checker.c
 
-CASES = ./cases/all_cases.c ./cases/case3.c ./cases/case5.c ./cases/case100.c ./cases/case500.c ./cases/sorted_pointer.c ./cases/indexof.c
+CASES = ./cases/all_cases.c ./cases/case3.c ./cases/case5.c ./cases/big_case.c ./cases/sorted_pointer.c ./cases/indexof.c
 
 HEADERS = ./cases/cases.h ./commands/commands.h ./tools/tools.h
 

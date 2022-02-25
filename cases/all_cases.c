@@ -6,7 +6,7 @@
 /*   By: tnamir <tnamir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 19:33:54 by tnamir            #+#    #+#             */
-/*   Updated: 2022/02/23 18:57:55 by tnamir           ###   ########.fr       */
+/*   Updated: 2022/02/25 11:35:51 by tnamir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ void	all_cases(t_list *list)
 		case3(list);
 	else if (list->a_lenght <= 5)
 		case5(list);
-	else if (list->a_lenght <= 100)
-		case100(list);
 	else
-		case500(list);
+		big_case(list);
 }

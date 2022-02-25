@@ -1,2 +1,3 @@
 # push_swap
-(unfinished)
+
+mandatory part done.

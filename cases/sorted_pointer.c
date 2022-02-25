@@ -6,13 +6,13 @@
 /*   By: tnamir <tnamir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 14:37:07 by tnamir            #+#    #+#             */
-/*   Updated: 2022/02/25 11:37:49 by tnamir           ###   ########.fr       */
+/*   Updated: 2022/02/25 13:14:19 by tnamir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cases.h"
 
-static int	is_sorted(int	*list, int lenght)
+int	is_sorted_end(int	*list, int lenght)
 {
 	int	x;
 
@@ -53,7 +53,7 @@ int	*sorted_pointer(int *list, int lenght)
 	x = -1;
 	while (++x < lenght)
 		a_clone[x] = list[x];
-	while (!is_sorted(a_clone, lenght))
+	while (!is_sorted_end(a_clone, lenght))
 		sort(a_clone, lenght);
 	return (a_clone);
 }

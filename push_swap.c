@@ -59,10 +59,9 @@ int	main(int argc, char **argv)
 			only_numbers(nums, &list);
 		}
 		to_be_main(&list, final_nums, nums);
+		is_sorted(&list);
+		all_cases(&list);
+		free(list.b);
 	}
-	x = 0;
-	is_sorted(&list);
-	all_cases(&list);
-	free(list.b);
 	return (0);
 }

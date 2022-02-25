@@ -17,13 +17,16 @@ void	ra(t_list *list, char	*print)
 	int	tmpp_a;
 	int	x;
 
-	tmpp_a = list->a[0];
-	x = 0;
-	while (x < list->a_lenght - 1)
+	if (list->a_lenght)
 	{
-		list->a[x] = list->a[x + 1];
-		x++;
+		tmpp_a = list->a[0];
+		x = 0;
+		while (x < list->a_lenght - 1)
+		{
+			list->a[x] = list->a[x + 1];
+			x++;
+		}
+		list->a[x] = tmpp_a;
+		write(1, print, 3);
 	}
-	list->a[x] = tmpp_a;
-	write(1, print, 3);
 }

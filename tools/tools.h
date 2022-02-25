@@ -28,5 +28,7 @@ char	*ft_substr(char	const	*s, unsigned int start, size_t len);
 char	*ft_strjoin(char	*s1, char	*s2);
 char	*ft_strdup(const char	*s);
 void	is_sorted(t_list *list);
+char	*get_next_line(int fd);
+int		ft_strcmp(char *s1, char *s2);
 
 #endif

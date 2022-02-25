@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cases.h                                            :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tnamir <tnamir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/16 19:30:41 by tnamir            #+#    #+#             */
-/*   Updated: 2022/02/25 13:14:29 by tnamir           ###   ########.fr       */
+/*   Created: 2022/02/25 13:00:55 by tnamir            #+#    #+#             */
+/*   Updated: 2022/02/25 13:01:00 by tnamir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CASES_H
-# define CASES_H
+int	ft_strcmp(char *s1, char *s2)
+{
+	int	i;
 
-# include "../commands/commands.h"
-# include <unistd.h>
-
-void	all_cases(t_list *list);
-void	case3(t_list *list);
-void	case5(t_list *list);
-void	big_case(t_list *list);
-int		indexof(int *lista, int i);
-int		*sorted_pointer(int *list, int lenght);
-int		is_sorted_end(int	*list, int lenght);
-
-#endif
+	i = 0;
+	while (s1[i] && s2[i] && s1[i] == s2[i])
+		++i;
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+}

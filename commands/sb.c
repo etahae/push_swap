@@ -16,8 +16,11 @@ void	sb(t_list *list, char	*print)
 {
 	int	tmp;
 
-	tmp = list->b[0];
-	list->b[0] = list->b[1];
-	list->b[1] = tmp;
-	write(1, print, 3);
+	if (list->b_lenght)
+	{
+		tmp = list->b[0];
+		list->b[0] = list->b[1];
+		list->b[1] = tmp;
+		write(1, print, 3);
+	}
 }

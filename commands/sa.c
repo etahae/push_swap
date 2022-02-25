@@ -16,8 +16,11 @@ void	sa(t_list *list, char	*print)
 {
 	int	tmp;
 
-	tmp = list->a[0];
-	list->a[0] = list->a[1];
-	list->a[1] = tmp;
-	write(1, print, 3);
+	if (list->a_lenght)
+	{
+		tmp = list->a[0];
+		list->a[0] = list->a[1];
+		list->a[1] = tmp;
+		write(1, print, 3);
+	}
 }

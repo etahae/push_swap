@@ -14,7 +14,7 @@
 
 void	errorlol(t_list *list)
 {
-	write(1, "Error\n", 6);
+	write(2, "Error\n", 6);
 	if (list)
 		free(list->a);
 	exit(0);
@@ -43,17 +43,13 @@ void	no_doubles(char **s, t_list *list)
 	int	y;
 	int	number;
 
-	y = 1;
-	while (s[y])
+	y = -1;
+	while (s[++y])
 	{
-		x = 1;
+		x = -1;
 		number = ft_atoi(s[y], list);
-		while (s[x])
-		{
+		while (s[++x])
 			if (ft_atoi(s[x], list) == number && y != x)
 				errorlol(NULL);
-			x++;
-		}
-		y++;
 	}
 }

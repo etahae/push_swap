@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   case100.c                                          :+:      :+:    :+:   */
+/*   big_case.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tnamir <tnamir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 19:06:09 by tnamir            #+#    #+#             */
-/*   Updated: 2022/02/25 11:34:24 by tnamir           ###   ########.fr       */
+/*   Updated: 2022/02/27 19:18:25 by tnamir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	bits_passer_max(int lenght)
 		return (10);
 }
 
-void	to_be_sort(t_list	*index, t_list *list, int bits)
+void	counting_sort(t_list	*index, t_list *list, int bits)
 {
 	if (!(index->a[0] & 1 << bits))
 	{
@@ -58,7 +58,7 @@ void	sort(t_list	*index, t_list *list)
 		x = 0;
 		const_lenght = index->a_lenght;
 		while ((x++ < const_lenght))
-			to_be_sort(index, list, bits_passer);
+			counting_sort(index, list, bits_passer);
 		while (list->b_lenght > 0)
 		{
 			pa(index, NULL);

@@ -40,6 +40,3 @@ The last element becomes the first one.
 
 rrr : rra and rrb at the same time.
 
-To illustrate the effect of some of these instructions, let’s sort a random list of integers.
-In this example, we’ll consider that both stacks grow from the right.
-
